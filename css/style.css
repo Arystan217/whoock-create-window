@@ -1,0 +1,162 @@
+@charset "'UTF-8";
+
+* {
+  margin: 0;
+  padding: 0; 
+  text-decoration: none;
+  outline: none;
+}
+
+html, 
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #fff;
+  color: #141414;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1850px;
+  padding: 0 15px;
+  margin: 0 auto; 
+}
+
+/* =========================== */
+
+.header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  transition: all 0.2s ease;
+  box-shadow: none;
+  background: #fff;
+  overflow: hidden;
+}
+.header--active {
+  padding: 5px 0;
+  box-shadow: 0 0 18px #ebebeb;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-icon {
+  width: 45px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+}
+.burger-icon span {
+  position: absolute;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 2px;
+  transition: all 0.2s linear;
+}
+.burger-icon .top {top: 0;}
+.burger-icon .middle {bottom: 50%; transform: translateY(50%); height: 2px;}
+.burger-icon .bottom {bottom: 0;}
+
+.burger-icon--active .top {
+  transform: rotateZ(45deg);
+  top: 14px;
+}
+.burger-icon--active .middle {
+  opacity: 0;
+  bottom: 20px;
+}
+.burger-icon--active .bottom {
+  transform: rotateZ(-45deg);
+  bottom: 14px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 80px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.6s ease;
+  z-index: 10;
+}
+.sidebar-item {
+  padding: 10px;
+  transition: all 0.35s ease;
+  color: #141414; 
+  font-weight: 400;
+  font-size: 20px;
+  background: #fff;
+  box-shadow: none;
+  z-index: 1;
+  border-radius: 5px;
+}
+.sidebar-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #d6d6d6;
+  background: #f1f1f1;
+  z-index: 2;
+}
+.burger-sidebar {
+  left: -260px;
+  width: 250px;
+}
+.burger-sidebar--active {
+  left: 15px;
+}
+
+.profile-sidebar {
+  right: -260px;
+  width: 250px;
+}
+.profile-sidebar--active {
+  right: 15px;
+}
+
+
+.header__name {
+  font-family: 'Marck Script', cursive;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.header__profile-icon {
+  width: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  overflow: visible;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__profile-icon:hover {
+  background: #f1f1f1;
+}
+
+
+.web-result {
+  padding-top: 100px;
+}
+.web-result iframe {
+  max-width: 1850px;
+  width: 85%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: block;
+}
