@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/ico/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Marck+Script&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Whoock</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__body">
+      
+      <div class="burger-icon">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+
+      <div class="header__name">
+        <span>Double trible</span>
+      </div>
+
+      <img src="img/ico/profile.png" alt="" class="header__profile-icon">
+
+    </div>
+  </header>
+  
+  <div class="sidebar burger-sidebar">
+    <a href="#" class="sidebar-item">Registration</a>
+    <a href="#" class="sidebar-item">Authorization</a>
+    <a href="#" class="sidebar-item">Log out</a>
+  </div>
+
+  <div class="sidebar profile-sidebar">
+    <a href="#" class="sidebar-item">Log out</a>
+  </div>
+
+  
+  <div class="container">
+    <div class="web-result">
+      <iframe src="https://arystan217.github.io/cuda/" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div class="input">
+    <div class="container">
+      <div class="restart">
+        <img src="img/ico/restart.png" alt="">
+      </div>
+      
+      <form action="#" class="input-field">
+        <div class="blur-wrapper">
+          <input type="text" id="front-end" class="active-field">
+          <div class="blur"></div>
+        </div>
+        <button class="send-button" type="submit"><img src="img/ico/send.png" alt=""></button>
+      </form>
+
+      <div class="side">
+        <span class="side__item side__item--active">Front-end</span>
+        <span class="side__item">Back-end</span>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <script>
+    const webResult = {
+      height: 6328
+    }
+
+    document.querySelector(".web-result iframe").style.height = webResult.height + 2 + "px"
+    const height = document.querySelector(".web-result iframe").offsetHeight
+    console.log(height)
+    document.querySelector(".web-result").style.height = document.querySelector(".web-result iframe").offsetHeight
+  </script>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
