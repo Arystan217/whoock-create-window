@@ -9,12 +9,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-const iframeDocument = iframe.contentDocument;
-const iframeBody = iframeDocument.body;
-const iframeHeight = iframeBody.scrollHeight;
-console.log(iframeHeight);
-
-
 
 
 //! SIDEBARS
@@ -47,9 +41,29 @@ document.addEventListener('click', function(event) {
 });
 
 
+//! INPUTS
+// elements
+const restartBtn = document.querySelector('.restart');
+const frontEndInput = document.getElementById('front-end-input');
+const backEndInput = document.getElementById('back-end-input');
+const frontEndSide = document.getElementById('front-end-side');
+const backEndSide = document.getElementById('back-end-side');
+
+// toggle inputs
+restartBtn.addEventListener('click', function() {
+  frontEndInput.classList.toggle('active-field');
+  backEndInput.classList.toggle('active-field');
+
+  frontEndSide.classList.toggle('side__item--active');
+  backEndSide.classList.toggle('side__item--active');
+});
 
 
-
+var myElement = document.querySelector('.web-result__iframe');
+var scrollbarWidth = myElement.offsetWidth - myElement.clientWidth;
+console.log(document.querySelector(".web-result__iframe").scrollWidth)
+myElement.style.overflow = 'hidden';
+document.querySelector(".web-result__iframe").style.width = 'calc(100% + ' + scrollbarWidth + 'px)';
 
 
 
