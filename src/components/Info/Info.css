@@ -1,0 +1,20 @@
+.info .container {
+    width: 88%;
+    max-width: 1300px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+.info__name {
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-family: 'Marck Script', cursive;
+    margin-top: 45px;
+    line-height: 80%;
+    margin-bottom: 15px;
+}
+.info__description {
+    font-size: 18px;
+    color: #242424;
+    line-height: 22px;
+}

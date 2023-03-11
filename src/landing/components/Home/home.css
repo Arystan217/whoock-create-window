@@ -1,0 +1,40 @@
+.home-wrapper {
+    display: flex;
+}
+
+.home_item-wrapper {
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home_item-wrapper button{
+    width: 260px;
+    height: 50px;
+}
+
+.home__item-slogan {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 107%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.home__item-about {
+    width: 400px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 107%;
+}
+
+.rainbow-x{
+    background: linear-gradient(90deg, #572EFD 31.65%, #FF43BB 86.55%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 72px;
+}
